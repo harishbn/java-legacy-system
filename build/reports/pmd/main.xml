@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.8.1" timestamp="2025-07-08T20:39:53.771">
+<file name="C:\projects-ref-only\java-legacy-system\src\main\java\com\legacy\system\LegacyApplication.java">
+<violation beginline="8" endline="14" begincolumn="32" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="com.legacy.system" class="LegacyApplication" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#UseUtilityClass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+</file>
+<file name="C:\projects-ref-only\java-legacy-system\src\main\java\com\legacy\system\service\BigService.java">
+<violation beginline="32" endline="32" begincolumn="31" endcolumn="53" rule="InefficientEmptyStringCheck" ruleset="String and StringBuffer" package="com.legacy.system.service" class="BigService" method="processUserData" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/strings.html#InefficientEmptyStringCheck" priority="3">
+String.trim().length()==0 is an inefficient way to validate an empty String.
+</violation>
+<violation beginline="39" endline="39" begincolumn="13" endcolumn="35" rule="PositionLiteralsFirstInComparisons" ruleset="Design" package="com.legacy.system.service" class="BigService" method="processUserData" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#PositionLiteralsFirstInComparisons" priority="3">
+Position literals first in String comparisons
+</violation>
+<violation beginline="40" endline="52" begincolumn="13" endcolumn="13" rule="ConfusingTernary" ruleset="Design" package="com.legacy.system.service" class="BigService" method="processUserData" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#ConfusingTernary" priority="3">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="49" endline="49" begincolumn="28" endcolumn="35" rule="AvoidDuplicateLiterals" ruleset="String and StringBuffer" package="com.legacy.system.service" class="BigService" method="processUserData" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/strings.html#AvoidDuplicateLiterals" priority="3">
+The String literal &quot;status&quot; appears 4 times in this file; the first occurrence is on line 49
+</violation>
+<violation beginline="53" endline="53" begincolumn="20" endcolumn="40" rule="PositionLiteralsFirstInComparisons" ruleset="Design" package="com.legacy.system.service" class="BigService" method="processUserData" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#PositionLiteralsFirstInComparisons" priority="3">
+Position literals first in String comparisons
+</violation>
+<violation beginline="61" endline="61" begincolumn="20" endcolumn="40" rule="PositionLiteralsFirstInComparisons" ruleset="Design" package="com.legacy.system.service" class="BigService" method="processUserData" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#PositionLiteralsFirstInComparisons" priority="3">
+Position literals first in String comparisons
+</violation>
+<violation beginline="67" endline="67" begincolumn="21" endcolumn="53" rule="SimpleDateFormatNeedsLocale" ruleset="Design" package="com.legacy.system.service" class="BigService" method="processUserData" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#SimpleDateFormatNeedsLocale" priority="3">
+When instantiating a SimpleDateFormat object, specify a Locale
+</violation>
+<violation beginline="80" endline="97" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic" package="com.legacy.system.service" class="BigService" method="transformData" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="81" endline="96" begincolumn="17" endcolumn="17" rule="CollapsibleIfStatements" ruleset="Basic" package="com.legacy.system.service" class="BigService" method="transformData" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="82" endline="82" begincolumn="36" endcolumn="61" rule="UseLocaleWithCaseConversions" ruleset="Design" package="com.legacy.system.service" class="BigService" method="transformData" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#UseLocaleWithCaseConversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="84" endline="94" begincolumn="25" endcolumn="25" rule="CollapsibleIfStatements" ruleset="Basic" package="com.legacy.system.service" class="BigService" method="transformData" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="87" endline="92" begincolumn="33" endcolumn="33" rule="AvoidDeeplyNestedIfStmts" ruleset="Design" package="com.legacy.system.service" class="BigService" method="transformData" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#AvoidDeeplyNestedIfStmts" priority="3">
+Deeply nested if..then statements are hard to read
+</violation>
+<violation beginline="89" endline="89" begincolumn="49" endcolumn="71" rule="UseLocaleWithCaseConversions" ruleset="Design" package="com.legacy.system.service" class="BigService" method="transformData" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#UseLocaleWithCaseConversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="110" endline="110" begincolumn="16" endcolumn="48" rule="SimpleDateFormatNeedsLocale" ruleset="Design" package="com.legacy.system.service" class="BigService" method="formatDate" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#SimpleDateFormatNeedsLocale" priority="3">
+When instantiating a SimpleDateFormat object, specify a Locale
+</violation>
+</file>
+<file name="C:\projects-ref-only\java-legacy-system\src\main\java\com\legacy\system\util\StringHelper.java">
+<violation beginline="8" endline="77" begincolumn="27" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="com.legacy.system.util" class="StringHelper" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#UseUtilityClass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="12" endline="12" begincolumn="31" endcolumn="38" rule="InefficientEmptyStringCheck" ruleset="String and StringBuffer" package="com.legacy.system.util" class="StringHelper" method="isEmpty" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/strings.html#InefficientEmptyStringCheck" priority="3">
+String.trim().length()==0 is an inefficient way to validate an empty String.
+</violation>
+<violation beginline="16" endline="16" begincolumn="20" endcolumn="63" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="com.legacy.system.util" class="StringHelper" variable="cache" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="29" endline="29" begincolumn="31" endcolumn="33" rule="AppendCharacterWithChar" ruleset="String and StringBuffer" package="com.legacy.system.util" class="StringHelper" method="proc" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/strings.html#AppendCharacterWithChar" priority="3">
+Avoid appending characters as strings in StringBuffer.append.
+</violation>
+<violation beginline="60" endline="60" begincolumn="22" endcolumn="41" rule="UseLocaleWithCaseConversions" ruleset="Design" package="com.legacy.system.util" class="StringHelper" method="formatAndValidate" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#UseLocaleWithCaseConversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="65" endline="67" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic" package="com.legacy.system.util" class="StringHelper" method="formatAndValidate" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+</pmd>

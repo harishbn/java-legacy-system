@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+          "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
+          "https://checkstyle.org/dtds/configuration_1_3.dtd">
+
+<module name="Checker">
+    <property name="severity" value="warning"/>
+
+    <module name="TreeWalker">
+        <!-- Code Style -->
+        <module name="MethodLength">
+            <property name="max" value="50"/>
+        </module>
+        <module name="ParameterNumber">
+            <property name="max" value="5"/>
+        </module>
+        <module name="CyclomaticComplexity">
+            <property name="max" value="10"/>
+        </module>
+        <module name="NPathComplexity"/>
+        
+        <!-- Naming Conventions -->
+        <module name="MethodName">
+            <property name="format" value="^[a-z][a-zA-Z0-9]*$"/>
+        </module>
+        
+        <!-- Class Design -->
+        <module name="VisibilityModifier"/>
+        <module name="HideUtilityClassConstructor"/>
+        
+        <!-- Coding -->
+        <module name="EmptyCatchBlock"/>
+        <module name="NestedIfDepth">
+            <property name="max" value="3"/>
+        </module>
+        <module name="StringLiteralEquality"/>
+        
+        <!-- Best Practices -->
+        <module name="MagicNumber"/>
+        <module name="MultipleStringLiterals"/>
+        <module name="AvoidStarImport"/>
+    </module>
+    
+    <!-- File Length -->
+    <module name="FileLength">
+        <property name="max" value="500"/>
+    </module>
+</module> 

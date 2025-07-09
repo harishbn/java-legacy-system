@@ -1,0 +1,67 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.22.RELEASE")
+    }
+}
+
+// LEGACY: Using old plugin application style
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'pmd'
+apply plugin: 'checkstyle'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // LEGACY: Using old Spring Boot version intentionally
+    compile('org.springframework.boot:spring-boot-starter-web:1.5.22.RELEASE')
+    compile('org.springframework.boot:spring-boot-starter-data-jpa:1.5.22.RELEASE')
+    
+    // LEGACY: Old versions of common libraries
+    compile('com.google.guava:guava:20.0')
+    compile('org.apache.commons:commons-lang3:3.5')
+    
+    // LEGACY: Using H2 for simplicity
+    runtime('com.h2database:h2:1.4.197')
+    
+    // LEGACY: Minimal test dependencies with no assertions framework
+    testCompile('org.springframework.boot:spring-boot-starter-test:1.5.22.RELEASE')
+}
+
+// LEGACY: Old Gradle wrapper version
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.10.3'
+}
+
+// Configure PMD
+pmd {
+    toolVersion = '5.8.1'
+    ruleSets = [
+        'java-basic',
+        'java-braces',
+        'java-strings',
+        'java-design',
+        'java-unusedcode'
+    ]
+}
+
+// Configure Checkstyle
+checkstyle {
+    toolVersion = '8.8'
+    configFile = file("${rootDir}/config/checkstyle/checkstyle.xml")
+}
+
+// Add PMD HTML report
+tasks.withType(Pmd) {
+    reports {
+        html.enabled = true
+    }
+} 
