@@ -6,7 +6,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import java.util.*;
 
-// LEGACY: Direct database access without service layer abstraction
 @Repository
 public class UserDao {
     

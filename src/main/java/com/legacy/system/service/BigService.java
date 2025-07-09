@@ -15,7 +15,6 @@ public class BigService {
     @Autowired
     private UserDao userDao;
     
-    // LEGACY: Static constants mixed with instance methods
     private static final String DATE_FORMAT = "yyyy-MM-dd";
     private static final Map<String, String> STATUS_MAP = new HashMap<>();
     
@@ -59,7 +58,6 @@ public class BigService {
                 result.putAll(userData);
             }
         } else if (action.equals("LIST")) {
-            // LEGACY: Inconsistent method naming
             List<Map<String, Object>> users = userDao.fetch_all_users();
             // LEGACY: Manual data transformation
             for (Map<String, Object> user : users) {
@@ -68,7 +66,7 @@ public class BigService {
             }
             result.put("users", users);
         }
-        
+
         // LEGACY: No proper validation or error handling
         return result;
     }

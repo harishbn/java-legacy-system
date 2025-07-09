@@ -23,7 +23,6 @@ public class ApiController {
     @Autowired
     private StringHelper stringHelper;
     
-    // LEGACY: GET endpoint with potential SQL injection
     @GetMapping("/user/{id}")
     public Map<String, Object> getUser(@PathVariable String id) {
         // LEGACY: Direct DAO access from controller
