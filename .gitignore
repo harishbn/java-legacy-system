@@ -7,8 +7,3 @@ build/
 
 # Logs
 *.log
-
-# Package files
-*.jar
-*.war
-*.ear
